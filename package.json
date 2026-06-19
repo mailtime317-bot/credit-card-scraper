@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "scrape credit card data from rates.ca",
   "main": "index.ts",
+  "scripts": {
+    "scrape": "node scraper.js",
+    "scrape:firefox": "node playwright-scraper.js",
+    "scrape:html": "node html-scraper.js"
+  },
   "license": "MIT",
   "type": "module",
   "dependencies": {
     "axios": "^1.5.0",
+    "cheerio": "^1.2.0",
+    "playwright": "^1.61.0",
     "puppeteer": "^20.1.1"
   }
 }
